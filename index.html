@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hub de Produtos dos Alunos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/gh/darkroomengineering/lenis@latest/bundled/lenis.js"></script>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <canvas id="particlesCanvas"></canvas>
+    <div class="hero-container">
+      <div class="hero-logo">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer hexagon -->
+          <path d="M40 4L72 22V58L40 76L8 58V22L40 4Z" stroke="url(#logoGrad)" stroke-width="2" fill="none" opacity="0.6"/>
+          <!-- Inner hexagon -->
+          <path d="M40 16L58 26V50L40 60L22 50V26L40 16Z" stroke="url(#logoGrad2)" stroke-width="1.5" fill="rgba(124,58,237,0.08)"/>
+          <!-- Center "H" letter -->
+          <path d="M30 28H34V38H46V28H50V52H46V42H34V52H30V28Z" fill="url(#logoGrad3)"/>
+          <!-- Glow dots on vertices -->
+          <circle cx="40" cy="4" r="3" fill="#7c3aed" opacity="0.8">
+            <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="72" cy="22" r="3" fill="#06b6d4" opacity="0.8">
+            <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="72" cy="58" r="3" fill="#7c3aed" opacity="0.8">
+            <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.5s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="40" cy="76" r="3" fill="#06b6d4" opacity="0.8">
+            <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.5s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="8" cy="58" r="3" fill="#7c3aed" opacity="0.8">
+            <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="8" cy="22" r="3" fill="#06b6d4" opacity="0.8">
+            <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          <defs>
+            <linearGradient id="logoGrad" x1="8" y1="22" x2="72" y2="58">
+              <stop offset="0%" stop-color="#7c3aed"/>
+              <stop offset="100%" stop-color="#06b6d4"/>
+            </linearGradient>
+            <linearGradient id="logoGrad2" x1="22" y1="26" x2="58" y2="50">
+              <stop offset="0%" stop-color="#06b6d4"/>
+              <stop offset="100%" stop-color="#7c3aed"/>
+            </linearGradient>
+            <linearGradient id="logoGrad3" x1="30" y1="28" x2="50" y2="52">
+              <stop offset="0%" stop-color="#a78bfa"/>
+              <stop offset="100%" stop-color="#22d3ee"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <h1>Hub de Produtos dos Alunos</h1>
+      <p class="subtitle">Explore os projetos desenvolvidos pelos alunos da turma. <br> Cada projeto representa dedicação, criatividade e aprendizado em desenvolvimento web.</p>
+
+      <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Buscar por nome, aluno ou descrição...">
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="products-count">
+      <span id="productsCount">1</span> projeto(s) exibido(s)
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+      <!-- Products will be inserted here by JavaScript -->
+    </div>
+
+    <div class="no-results" id="noResults" style="display: none;">
+      <p>Nenhum projeto encontrado com os critérios de busca.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <h3>Como adicionar seu projeto?</h3>
+      <ol>
+        <li>Abra o arquivo <code>script.js</code> em um editor de texto</li>
+        <li>Localize o array <code>products</code></li>
+        <li>Adicione um novo objeto com: <code>title</code>, <code>description</code>, <code>image</code>, <code>studentName</code>, <code>websiteUrl</code>, <code>githubUrl</code></li>
+        <li>Salve o arquivo e recarregue a página</li>
+      </ol>
+      <p class="footer-note">Hub de Produtos &mdash; Desenvolvido com 💜 pela turma de ADS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
