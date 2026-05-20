@@ -150,22 +150,22 @@ requestAnimationFrame(raf);
 const products = [
   {
     id: 1,
-    title: "E-Commerce Shopify",
-    description: "Uma loja online moderna e responsiva com produtos, carrinho de compras e checkout integrado. Desenvolvida com HTML5, CSS3 e JavaScript vanilla.",
-    image: "https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=500&h=300&fit=crop",
-    studentName: "João Silva",
-    websiteUrl: "https://example.com/ecommerce",
-    githubUrl: "https://github.com/joaosilva/ecommerce-project"
+    title: "NerveGear",
+    description: "Apresentação do melhor produto de Realidade Virtual já criado.",
+    image: "https://media.istockphoto.com/id/1913776322/pt/foto/virtual-reality-headset-isolated.jpg?s=2048x2048&w=is&k=20&c=WUnI90Hc4eg4Uriwt_jKcFcQ8ZB0URDzij-9kGj_dNg=",
+    studentName: "Eric Fabiano",
+    websiteUrl: "https://mister-ef.github.io/Projeto-Produto-Tuba/",
+    githubUrl: "https://github.com/Mister-EF/Projeto-Produto-Tuba"
   },
   // ADICIONE NOVOS PRODUTOS AQUI
   // Exemplo:
   {
     id: 2,
     title: "Landing Page de Startup",
-    description: "Página de apresentação moderna com animações e call-to-action.",
-    image: "https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=500&h=300&fit=crop",
+    description: "Página de apresentação moderna com animações e call-to-action para captação de leads.",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
     studentName: "Maria Santos",
-    websiteUrl: "https://example.com/startup",
+    websiteUrl: "https://maria-startup.com",
     githubUrl: "https://github.com/mariasantos/startup-landing"
   },
 ];
