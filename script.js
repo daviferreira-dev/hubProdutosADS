@@ -161,11 +161,11 @@ const products = [
   // Exemplo:
   {
     id: 2,
-    title: "Landing Page de Startup",
-    description: "Página de apresentação moderna com animações e call-to-action para captação de leads.",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
-    studentName: "Maria Santos",
-    websiteUrl: "https://maria-startup.com",
+    title: "Monster Energy Drink",
+    description: "Uma landing page de venda do energético Monster.",
+    image: "https://i.imgur.com/3Jv1hac.png",
+    studentName: "Matheus Czubka",
+    websiteUrl: "https://glowing-dieffenbachia-8aded3.netlify.app",
     githubUrl: "https://github.com/mariasantos/startup-landing"
   },
 ];
